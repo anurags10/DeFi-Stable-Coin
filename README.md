@@ -1,66 +1,39 @@
-## Foundry
+# Decentralized Stablecoin (DSC) Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+The Decentralized Stablecoin (DSC) Protocol is a blockchain-based platform for minting and burning stablecoins. This protocol ensures a decentralized, trustless system for collateral management, liquidations, and monitoring user health factors. The project demonstrates a robust implementation of DeFi principles and provides a foundation for secure, scalable financial systems.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Features of the Stablecoin
 
-## Documentation
+- **Relative Stability**
 
-https://book.getfoundry.sh/
+  - The stablecoin is anchored or pegged to a value of **$1.00**, maintaining relative stability through decentralized mechanisms.
 
-## Usage
+- **Stability Mechanism (Minting)**
 
-### Build
+  - **Algorithmic (Decentralized)**: Minting of the stablecoin is governed by an algorithmic mechanism that ensures the system remains decentralized and transparent.
 
-```shell
-$ forge build
-```
+- **Collateral**
 
-### Test
+  - The stablecoin is backed by **exogenous collateral**, currently supporting the following assets:
+    1. **wETH (Wrapped Ethereum)**
+    2. **wBTC (Wrapped Bitcoin)**
 
-```shell
-$ forge test
-```
+- **Testing Framework**
+  - Built and tested using **Foundry**, ensuring high-quality smart contracts with robust unit and integration testing.
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## Why This Project?
 
-### Gas Snapshots
+This project showcases my journey as a blockchain developer, emphasizing my skills in smart contract development, decentralized finance (DeFi), and security practices. It is designed to be a foundational tool for anyone interested in decentralized stablecoin systems.
 
-```shell
-$ forge snapshot
-```
+---
 
-### Anvil
+## Technology Stack
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- **Development Tools**: Foundry
+- **Programming Languages**: Solidity
+- **Testing Framework**: Foundry for unit and integration tests
+- **Deployment**: Designed for Ethereum-compatible chains
